@@ -35,6 +35,7 @@ footer{
 .scoreBoard{
     height: 5%;
     align-self: flex-start;
+
 }
 .leg{
     height: 100%;
@@ -45,33 +46,17 @@ footer{
     width: 80%;
     height: 80%;
     border: solid blue;
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    border: solid red;
+    width: 14.2%;
+    Height: 100%
+}
+.row{
+    border: solid blue;
+    height: 14%;
+    width: 100%
 }
 
-/* 
-
-<main>
-
-<div class="scoreBoard">
-<div class="p1">
-player1 
-<div class="p1score">#</div>
-</div>
-<div class="p2">
-player2
-<div class="p2score"></div>
-</div>
-</div>
-
-<div class="leg">leg </div>
-<div class="board">Im the board</div>
-<div class="leg">leg</div>
-
-
-</main>
-<footer>
-    <div class="play1">P!</div>
-    <div class="play2">P@</div>
-</footer>
-</div> <!-- end of container -->
-
-    */
