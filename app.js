@@ -1,2 +1,46 @@
 // console.log("working")
 // $('body').css('background', 'pink')
+var b11 = $('.column1 .row1').val()
+var b12 = $('.column1 .row2').val()
+var b13 = $('.column1 .row3').val()
+var b14 = $('.column1 .row4').val()
+var b15 = $('.column1 .row5').val()
+var b16 = $('.column1 .row6').val()
+
+var b21 = $('.column2 .row1').val()
+var b22 = $('.column2 .row2').val()
+var b23 = $('.column2 .row3').val()
+var b24 = $('.column2 .row4').val()
+var b25 = $('.column2 .row5').val()
+var b26 = $('.column2 .row6').val()
+
+var b31 = $('.column3 .row1').val()
+var b32 = $('.column3 .row2').val()
+var b33 = $('.column3 .row3').val()
+var b34 = $('.column3 .row4').val()
+var b35 = $('.column3 .row5').val()
+var b36 = $('.column3 .row6').val()
+
+var b41 = $('.column4 .row1').val()
+var b42 = $('.column4 .row2').val()
+var b43 = $('.column4 .row3').val()
+var b44 = $('.column4 .row4').val()
+var b45 = $('.column4 .row5').val()
+var b46 = $('.column4 .row6').val()
+
+var b51 = $('.column5 .row1').val()
+var b52 = $('.column5 .row2').val()
+var b53 = $('.column5 .row3').val()
+var b54 = $('.column5 .row4').val()
+var b55 = $('.column5 .row5').val()
+var b56 = $('.column5 .row6').val()
+
+var b61 = $('.column6 .row1').val()
+var b62 = $('.column6 .row2').val()
+var b63 = $('.column6 .row3').val()
+var b64 = $('.column6 .row4').val()
+var b65 = $('.column6 .row5').val()
+var b66 = $('.column6 .row6').val()
+
+
+
