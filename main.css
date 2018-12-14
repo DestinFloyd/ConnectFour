@@ -48,14 +48,18 @@ footer{
     border: solid blue;
     display: flex;
     flex-direction: row;
+    font-size:0;
 }
+
 .column{
     border: solid red;
     width: 14.2%;
-    Height: 100%
+    Height: 100%;
+    background: white;
 }
 .row{
     border: solid blue;
     height: 14%;
-    width: 100%
+    width: 100%;
+    background: white;
 }
