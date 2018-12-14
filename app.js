@@ -66,10 +66,12 @@ let p2Score = 1;
 let turnsCounter = 0;
 
 const wins = {
-hor: [],
+hor: [          ],
 vert: [],
 diag: []
 }
+
+
 
 let checkTurns = () => {
     turnsCounter ++;
@@ -117,6 +119,16 @@ else{
     turnsCounter++;
 }
 }
+
+
+
+
+console.log(parseInt($(b11).attr("value")) +  parseInt($(b12).attr("value")))
+
+
+// if( ){
+
+// }
 
 
 
