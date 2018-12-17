@@ -169,3 +169,8 @@ $('#letsPlay').click(function(event){
   });
 
 
+spin.oninput = function() {
+    let howMuch = $("#spin").val()
+    document.querySelector("main").style.transform = `rotateY(${howMuch}deg)`
+  
+  }

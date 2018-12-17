@@ -35,7 +35,9 @@
 </div>
 <main>
 
-<div class="leg"> </div>
+<div class="wrapleg"> 
+
+</div>
 <div class="board">
     <div class="column column1" onclick="checkTurns(), switchSpots(b11, b12, b13, b14, b15, b16), checkForWins()">
         <div class="row row1" value="0">&#8226</div>
@@ -94,14 +96,14 @@
         <div class="row row6" value="0">&#8226</div>
     </div><!-- column end -->
 </div>
-<div class="leg"></div>
+<div class="wrapleg"> 
 
-
+</div>  
 
 </main>
 <footer>
     <form action="">
-    
+        <input type="range" min="0" max="180" value="5" class="slider" id="spin">
         <input type="text" placeholder="Player1" id="inputName1">
         <input type="text" placeholder="Player2" id="inputName2">
         <br>
@@ -113,6 +115,9 @@
         <button id="letsPlay">Let's Play</button>
     
 </form>
+
+       
+   
 </footer>
 </div> <!-- end of container -->
 

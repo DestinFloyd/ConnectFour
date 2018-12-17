@@ -15,7 +15,11 @@
 }
 .head:hover
 .rules{
-    display: block;
+    display: flex;
+    font-size: 10pt;
+    border: solid blue;
+    border-radius: 10%;
+    text-align: center;
 }
 .rules{
     display: none;
@@ -23,7 +27,7 @@
 main{
     height: 60%;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: flex-start;
 
 }
@@ -32,20 +36,14 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
-
 .scoreBoard{
     height: 5%;
     align-self: flex-start;
+}
 
-}
-.leg{
-    height: 100%;
-    background: blue;
-    width: 10%;
-}
 .board{
-    width: 80%;
-    height: 80%;
+    width: 450px;
+    height: 250px;
     display: flex;
     flex-direction: row;
     
@@ -75,8 +73,17 @@ footer{
 .listOfColors{
     display: flex;
     justify-content: center;
+    text-align: center;
+    font-size: 10pt;
+    border: solid blue;
+    border-radius: 10%;
 
 }
 .listOfColors{
     display: none;
+}
+.wrapleg {
+    background: linear-gradient(to right, blue, lightblue);
+    height: 300px; 
+    width: 50px;
 }
