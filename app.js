@@ -66,7 +66,7 @@ let p2Score = 1;
 let turnsCounter = 0;
 
 
-const wins = [[b11, b21, b31, b41], [b12, b22, b32, b42], [b13, b23, b33, b43], [b14, b24, b34, b44], [b15, b25, b35, b45], [b16, b26, b36, b46], [b21, b31, b41, b51], [b22, b32, b42, b52], [b23, b33, b43, b53] , [b24, b34, b44, b54], [b25, b35, b45, b55], [b26, b36, b46, b56], [b31, b41, b51, b61], [b32, b42, b52, b62], [b33, b43, b53, b63], [b34, b44, b54, b64], [b35, b45, b55, b65], [b36, b46, b56, b66], [b41, b51, b61, b71], [b42, b52, b62, b72], [b43, b53, b63, b73], [b44, b54, b64, b74], [b45, b55, b65, b75], [b46, b56, b66, b76], [b11, b12, b13, b14], [b21, b22, b23, b24], [b31, b32, b33, b34], [b41, b42, b43, b44], [b51, b52, b53, b54], [b61, b62, b63, b64], [b71, b72, b73, b74], [b12, b13, b14, b15], [b22, b23, b24, b25], [b32, b33, b34, b35], [b42, b43, b44, b45], [b52, b53, b54, b55], [b62, b63, b64, b65], [b72, b73, b74, b75], [b13, b14, b15, b16], [b23, b24, b25, b26], [b33, b34, b35, b36], [b43, b44, b45, b46], [b53, b54, b55, b56], [b63, b64, b65, b66], [b73, b74, b75, b76], [b16, b25, b34, b43], [b26, b35, b44, b53], [b36, b45, b54, b63], [b46, b55, b64, b73], [b46, b35, b24, b13], [b56, b45, b34, b23], [b66, b55, b44, b33], [b76, b65, b54, b43], [b15, b24, b33, b42], [b25, b34, b43, b52], [b35, b44, b53, b62], [b45, b54, b63, b72], [b45, b34, b23, b12], [b55, b44, b33, b22], [b65, b54, b43, b32], [b75, b64, b53, b42], [b14, b23, b32, b41], [b24, b33, b42, b51], [b34, b43, b52, b61], [b44, b53, b62, b71], [b44, b33, b22, b11], [b54, b43, b32, b21], [b64, b53, b42, b31], [b74, b63, b52, b41]]
+const wins = [[b11, b21, b31, b41], [b12, b22, b32, b42], [b13, b23, b33, b43], [b14, b24, b34, b44], [b15, b25, b35, b45], [b16, b26, b36, b46], [b21, b31, b41, b51], [b22, b32, b42, b52], [b23, b33, b43, b53], [b24, b34, b44, b54], [b25, b35, b45, b55], [b26, b36, b46, b56], [b31, b41, b51, b61], [b32, b42, b52, b62], [b33, b43, b53, b63], [b34, b44, b54, b64], [b35, b45, b55, b65], [b36, b46, b56, b66], [b41, b51, b61, b71], [b42, b52, b62, b72], [b43, b53, b63, b73], [b44, b54, b64, b74], [b45, b55, b65, b75], [b46, b56, b66, b76], [b11, b12, b13, b14], [b21, b22, b23, b24], [b31, b32, b33, b34], [b41, b42, b43, b44], [b51, b52, b53, b54], [b61, b62, b63, b64], [b71, b72, b73, b74], [b12, b13, b14, b15], [b22, b23, b24, b25], [b32, b33, b34, b35], [b42, b43, b44, b45], [b52, b53, b54, b55], [b62, b63, b64, b65], [b72, b73, b74, b75], [b13, b14, b15, b16], [b23, b24, b25, b26], [b33, b34, b35, b36], [b43, b44, b45, b46], [b53, b54, b55, b56], [b63, b64, b65, b66], [b73, b74, b75, b76], [b16, b25, b34, b43], [b26, b35, b44, b53], [b36, b45, b54, b63], [b46, b55, b64, b73], [b46, b35, b24, b13], [b56, b45, b34, b23], [b66, b55, b44, b33], [b76, b65, b54, b43], [b15, b24, b33, b42], [b25, b34, b43, b52], [b35, b44, b53, b62], [b45, b54, b63, b72], [b45, b34, b23, b12], [b55, b44, b33, b22], [b65, b54, b43, b32], [b75, b64, b53, b42], [b14, b23, b32, b41], [b24, b33, b42, b51], [b34, b43, b52, b61], [b44, b53, b62, b71], [b44, b33, b22, b11], [b54, b43, b32, b21], [b64, b53, b42, b31], [b74, b63, b52, b41]]
 
 
 // [b11, b21, b31, b41],
@@ -90,7 +90,6 @@ const wins = [[b11, b21, b31, b41], [b12, b22, b32, b42], [b13, b23, b33, b43], 
 //    [b35, b45, b55, b65], 
 //    [b36, b46, b56, b66], 
 
-// m missing::
 //    [b41, b51, b61, b71], 
 //    [b42, b52, b62, b72], 
 //    [b43, b53, b63, b73],
@@ -152,9 +151,9 @@ const wins = [[b11, b21, b31, b41], [b12, b22, b32, b42], [b13, b23, b33, b43], 
 
 
 let checkTurns = () => {
-    turnsCounter ++;
+    turnsCounter++;
     // even p1
-    if(turnsCounter % 2 == 0){
+    if (turnsCounter % 2 == 0) {
         color = p1Color;
         score = p1Score
     }
@@ -171,58 +170,68 @@ let checkTurns = () => {
 
 let switchSpots = (sp1, sp2, sp3, sp4, sp5, sp6) => {
 
-if($(sp6).css('background-color') == 'rgb(255, 255, 255)') {
-    $(sp6).attr("value", score)
-   $(sp6).css('background-color', color) 
-}else if($(sp5).css('background-color')== 'rgb(255, 255, 255)'){
-    $(sp5).attr("value", score)
-    $(sp5).css('background-color', color) 
+    if ($(sp6).css('background-color') == 'rgb(255, 255, 255)') {
+        $(sp6).attr("value", score)
+        $(sp6).css('background-color', color)
+    } else if ($(sp5).css('background-color') == 'rgb(255, 255, 255)') {
+        $(sp5).attr("value", score)
+        $(sp5).css('background-color', color)
+    }
+    else if ($(sp4).css('background-color') == 'rgb(255, 255, 255)') {
+        $(sp4).attr("value", score)
+        $(sp4).css('background-color', color)
+
+    } else if ($(sp3).css('background-color') == 'rgb(255, 255, 255)') {
+        $(sp3).attr("value", score)
+        $(sp3).css('background-color', color)
+
+    } else if ($(sp2).css('background-color') == 'rgb(255, 255, 255)') {
+        $(sp2).attr("value", score)
+        $(sp2).css('background-color', color)
+    } else if ($(sp1).css('background-color') == 'rgb(255, 255, 255)') {
+        $(sp1).attr("value", score)
+        $(sp1).css('background-color', color)
+    }
+    else {
+        turnsCounter++;
+    }
 }
-else if($(sp4).css('background-color')== 'rgb(255, 255, 255)'){
-    $(sp4).attr("value", score)
-    $(sp4).css('background-color', color) 
-
-}else if($(sp3).css('background-color')== 'rgb(255, 255, 255)'){
-    $(sp3).attr("value", score)
-    $(sp3).css('background-color', color) 
-
-}else if($(sp2).css('background-color')== 'rgb(255, 255, 255)'){
-    $(sp2).attr("value", score)
-    $(sp2).css('background-color', color) 
-}else if($(sp1).css('background-color')== 'rgb(255, 255, 255)'){
-    $(sp1).attr("value", score)
-    $(sp1).css('background-color', color) 
-}
-else{
-    turnsCounter++;
-}
-}
 
 
 
-let checkForWins = () => { 
-    for(let counter = 0; counter < wins.length; counter ++){
-     let piece = wins[counter]
+let checkForWins = () => {
+    for (let counter = 0; counter < wins.length; counter++) {
+        let piece = wins[counter]
 
-    let piecesValue = Number(piece[0].attr('value')) + Number(piece[1].attr('value')) + Number(piece[2].attr('value')) + Number(piece[3].attr('value'))
-      if(piecesValue == 0.4 ){
-        console.log( "player1 wins!")
-        // they flash!
-        // $(b11).css('background-color', 'white') 
-        // all backgrounds white, 
-        // score board updated
-        // reset all values to 0
+        let piecesValue = Number(piece[0].attr('value')) + Number(piece[1].attr('value')) + Number(piece[2].attr('value')) + Number(piece[3].attr('value'))
+        if (piecesValue == 0.4) {
+            console.log("player1 wins!")
+            reset()
+            turnsCounter = 0
+            // $(b11).css('background-color', 'white') 
+            // all backgrounds white, 
+            // score board updated
+            // reset all values to 0
         }
-          else if(piecesValue == 4){
-        console.log( "player2 wins!")
-//      dittOOOO
-    
-    }
-        
-      }
-    }
-   
+        else if (piecesValue == 4) {
+            console.log("player2 wins!")
+            reset()
+            turnsCounter = 0
+            // dittOOOO
 
+        }
+
+    }
+}
+
+let boxes = [b11, b12, b13, b14, b15, b16, b21, b22, b23, b24, b25, b26, b31, b32, b33, b34, b35, b36, b41, b42, b43, b44, b45, b46, b51, b52, b53, b54, b55, b56, b61, b62, b63, b64, b65, b66, b71, b72, b73, b74, b75, b76]
+
+const reset = () => {
+    for(let i =0; i < boxes.length; i ++){
+        $(boxes[i]).css('background-color', 'white') 
+        $(boxes[i]).attr('value', 0)
+    }
+}
 // console.log(parseInt($(b11).attr("value")) +  parseInt($(b12).attr("value")))
 
 
@@ -244,10 +253,10 @@ let checkForWins = () => {
 
 // let switchSpots = (a) => {
 //     let check6 = `".` + `${a}` + `.row1"`
-    
+
 //     console.log(check6)
 //     console.log($("\"." `${check6}"`))
-  
+
 //    if( ){
 //        console.log("okay")
 //    }else if($(`.${a} .row1`).text() == "1" ){
