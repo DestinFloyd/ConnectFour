@@ -7,7 +7,9 @@
 
 }
 .winner{
-    background-image: url('confetti.gif')
+    background-image: url('confetti.gif');
+    background-size: auto;
+    background-repeat: repeat;
 }
 .head{
     height: 25%;
@@ -125,8 +127,15 @@ form{
 .listOfColors{
     display: none;
 }
-.wrapleg {
+.Lleg {
     background: linear-gradient(to right, blue, lightblue);
     height: 300px; 
     width: 50px;
+    border-radius: 15% 0% 15% 15%;
+}
+.Rleg{
+    background: linear-gradient(to right, blue, lightblue);
+    height: 300px; 
+    width: 50px;
+    border-radius: 0% 25% 25% 25%;
 }

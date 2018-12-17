@@ -56,6 +56,8 @@ let color = 'white';
 let p1Color = 'red';
 let p2Color = 'black';
 
+let p1Name ='Player1';
+let p2Name = 'Player2';
 // default score box and p1/p2 values for tracking which squares are checked
 let score = 0;
 const p1Score = .1;
@@ -92,6 +94,7 @@ const checkTurns = () => {
 
 const switchSpots = (sp1, sp2, sp3, sp4, sp5, sp6) => {
         $('.container1').removeClass('winner')
+        $('.name').text("Connect 4")
     if ($(sp6).css('background-color') == 'rgb(255, 255, 255)') {
         $(sp6).attr("value", score)
         $(sp6).css('background-color', color)
@@ -133,6 +136,7 @@ const checkForWins = () => {
             numOfWins1 ++
             $(".p1score").text(numOfWins1)
             $('.container1').addClass("winner")
+            $('.name').text(`${p1Name} Wins!` )
             
         }
         else if (piecesValue == 4) {
@@ -142,7 +146,7 @@ const checkForWins = () => {
             numOfWins2 ++
             $(".p2score").text(numOfWins2)
             $('.container1').addClass("winner")
-
+            $('.name').text(`${p2Name} Wins!` )
         }
 
     }
@@ -161,7 +165,9 @@ $('#letsPlay').click(function(event){
     event.preventDefault();
     reset()
     $(".p1").text($('#inputName1').val())
+    p1Name = $('#inputName1').val()
     $(".p2").text($('#inputName2').val())
+    p2Name = $('#inputName2').val()
     if($("#inputColor1").val().length >= 3){
     p1Color = $("#inputColor1").val()
     }else{p1Color = 'red'}
