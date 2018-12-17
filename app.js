@@ -91,7 +91,7 @@ const checkTurns = () => {
 // console.log(color)
 
 const switchSpots = (sp1, sp2, sp3, sp4, sp5, sp6) => {
-
+        $('.container1').removeClass('winner')
     if ($(sp6).css('background-color') == 'rgb(255, 255, 255)') {
         $(sp6).attr("value", score)
         $(sp6).css('background-color', color)
@@ -132,7 +132,8 @@ const checkForWins = () => {
             turnsCounter = 0
             numOfWins1 ++
             $(".p1score").text(numOfWins1)
-
+            $('.container1').addClass("winner")
+            
         }
         else if (piecesValue == 4) {
             console.log("player2 wins!")
@@ -140,6 +141,7 @@ const checkForWins = () => {
             turnsCounter = 0
             numOfWins2 ++
             $(".p2score").text(numOfWins2)
+            $('.container1').addClass("winner")
 
         }
 

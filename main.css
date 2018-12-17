@@ -1,7 +1,13 @@
 .container1{
     height: 100vh;
     width: 100vw;
-    /* transform: rotateY(180deg) */
+    background-image: url('dots2.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.winner{
+    background-image: url('confetti.gif')
 }
 .head{
     height: 25%;
