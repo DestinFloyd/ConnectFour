@@ -17,12 +17,31 @@
     justify-content: center;
     align-items: flex-start;
 
-    animation: spin 3s; 
+    animation: spin 3s ease-in-out; 
 }
 @keyframes spin{
     25%{
-        transform: rotateY(360deg);
+        transform: rotateY(180deg);
     }
+    50%{
+        transform: translate(10px, -10px);
+    }
+    55%{
+        transform: translate(20px, 30px);
+    }
+    60%{
+        transform: translate(20px, -20px);
+    }
+    65%{
+        transform: translate(-15px, 30px);
+    }
+    70%{
+        transform: translate(25px, 20px);
+    }
+    90%{
+        transform: rotateY(-180deg);
+    }
+
 }
 .head{
     height: 25%;
@@ -67,7 +86,7 @@ footer{
     
 }
 .column{
-    width: 14.6%;
+    width: 16%;
     height: 100%;
     background: yellow;
 }
@@ -155,4 +174,8 @@ form{
 #letsPlay{
     background-color: silver;
     box-shadow: 2px 2px 2px 2px black;
+}
+.userInputField:hover{
+background-color: silver;
+font-size: 1em;
 }
