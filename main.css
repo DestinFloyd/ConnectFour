@@ -45,32 +45,34 @@ footer{
 .board{
     width: 80%;
     height: 80%;
-    border: solid blue;
     display: flex;
     flex-direction: row;
     
 }
 
 .column{
-    border: solid red;
     width: 14.2%;
     height: 100%;
     background: yellow;
 }
 .row{
-    border: solid blue;
-    height: 14%;
+    height: 16.6%;
     width: 100%;
     background: white
 }
 .row{
     background-color: white;
-    /* background-attachment: fixed; */
+    text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: xx-large;
+    /* padding: 0%;
+    margin: 0%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
     font-weight: bold;
-    text-align: center;
+
 }
 
 /* .board{
