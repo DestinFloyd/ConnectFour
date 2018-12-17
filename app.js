@@ -154,3 +154,29 @@ const reset = () => {
         $(boxes[i]).attr('value', 0)
     }
 }
+
+$('#letsPlay').click(function(event){
+    event.preventDefault();
+    reset()
+    $(".p1").text($('#inputName1').val())
+    $(".p2").text($('#inputName2').val())
+    p1Color = $("#inputColor1").val()
+    p2Color =  $("#inputColor2").val()
+  });
+
+//   <input type="text" placeholder="Player1" id="inputName1">
+
+//   <input type="text" placeholder="Player2" id="inputName2">
+//   <input type="text" placeholder="Player1's color" id="inputColor1">
+
+//   <input type="text" placeholder="Player2's color" id="inputColor2">
+//   <button id="letsPlay">Let's Play</button>
+
+// <div class="p1">
+// player1 
+// <div class="p1score"></div>
+// </div>
+// <div class="p2">
+// player2
+// <div class="p2score"></div>
+// </div>

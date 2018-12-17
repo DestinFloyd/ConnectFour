@@ -33,12 +33,12 @@
 <div class="leg"> </div>
 <div class="board">
     <div class="column column1" onclick="checkTurns(), switchSpots(b11, b12, b13, b14, b15, b16), checkForWins()">
-        <div class="row row1" value="0"><p>&#8226</p></div>
-        <div class="row row2" value="0"><p>&#8226</p></div>
-        <div class="row row3" value="0"><p>&#8226</p></div>
-        <div class="row row4" value="0"><p>&#8226</p></div>
-        <div class="row row5" value="0"><p>&#8226</p></div>
-        <div class="row row6" value="0"><p>&#8226</p></div>
+        <div class="row row1" value="0">&#8226</div>
+        <div class="row row2" value="0">&#8226</div>
+        <div class="row row3" value="0">&#8226</div>
+        <div class="row row4" value="0">&#8226</div>
+        <div class="row row5" value="0">&#8226</div>
+        <div class="row row6" value="0">&#8226</div>
     </div><!-- column end -->
     <div class="column column2" onclick="checkTurns(), switchSpots(b21, b22, b23, b24, b25, b26), checkForWins()">
         <div class="row row1" value="0">&#8226</div>
@@ -95,12 +95,17 @@
 
 </main>
 <footer>
-    <div class="play1">P!
+    <form action="">
+    
+        <input type="text" placeholder="Player1" id="inputName1">
 
-    </div>
-    <div class="play2">P@
+        <input type="text" placeholder="Player2" id="inputName2">
+        <input type="text" placeholder="Red" id="inputColor1">
 
-    </div>
+        <input type="text" placeholder="Black" id="inputColor2">
+        <button id="letsPlay">Let's Play</button>
+    
+</form>
 </footer>
 </div> <!-- end of container -->
 
