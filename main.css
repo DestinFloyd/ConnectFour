@@ -30,8 +30,9 @@ main{
 footer{
     height: 15%;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
+
 .scoreBoard{
     height: 5%;
     align-self: flex-start;
@@ -70,3 +71,12 @@ footer{
     font-weight: bold;
 }
 
+.list:hover
+.listOfColors{
+    display: flex;
+    justify-content: center;
+
+}
+.listOfColors{
+    display: none;
+}

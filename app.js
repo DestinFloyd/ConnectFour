@@ -160,23 +160,12 @@ $('#letsPlay').click(function(event){
     reset()
     $(".p1").text($('#inputName1').val())
     $(".p2").text($('#inputName2').val())
+    if($("#inputColor1").val().length >= 3){
     p1Color = $("#inputColor1").val()
-    p2Color =  $("#inputColor2").val()
+    }else{p1Color = 'red'}
+   if( $("#inputColor2").val().length >= 3){
+    p2Color = $("#inputColor2").val()
+    }else{p2Color = 'black'}
   });
 
-//   <input type="text" placeholder="Player1" id="inputName1">
 
-//   <input type="text" placeholder="Player2" id="inputName2">
-//   <input type="text" placeholder="Player1's color" id="inputColor1">
-
-//   <input type="text" placeholder="Player2's color" id="inputColor2">
-//   <button id="letsPlay">Let's Play</button>
-
-// <div class="p1">
-// player1 
-// <div class="p1score"></div>
-// </div>
-// <div class="p2">
-// player2
-// <div class="p2score"></div>
-// </div>
