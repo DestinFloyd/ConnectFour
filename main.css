@@ -11,6 +11,19 @@
     background-size: auto;
     background-repeat: repeat;
 }
+.winner2{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    animation: spin 3s; 
+}
+@keyframes spin{
+    25%{
+        transform: rotateY(360deg);
+    }
+}
 .head{
     height: 25%;
     width: 100%;
@@ -138,4 +151,8 @@ form{
     height: 300px; 
     width: 50px;
     border-radius: 0% 25% 25% 25%;
+}
+#letsPlay{
+    background-color: silver;
+    box-shadow: 2px 2px 2px 2px black;
 }

@@ -95,6 +95,7 @@ const checkTurns = () => {
 const switchSpots = (sp1, sp2, sp3, sp4, sp5, sp6) => {
         $('.container1').removeClass('winner')
         $('.name').text("Connect 4")
+        $('main').removeClass("winner2")
     if ($(sp6).css('background-color') == 'rgb(255, 255, 255)') {
         $(sp6).attr("value", score)
         $(sp6).css('background-color', color)
@@ -131,22 +132,25 @@ const checkForWins = () => {
         let piecesValue = Number(piece[0].attr('value')) + Number(piece[1].attr('value')) + Number(piece[2].attr('value')) + Number(piece[3].attr('value'))
         if (piecesValue == 0.4) {
             console.log("player1 wins!")
+            // color red
             reset()
             turnsCounter = 0
             numOfWins1 ++
             $(".p1score").text(numOfWins1)
             $('.container1').addClass("winner")
-            $('.name').text(`${p1Name} Wins!` )
-            
+            $('.name').text(`${p1Name} Wins!`)
+            $('main').addClass("winner2")
         }
         else if (piecesValue == 4) {
             console.log("player2 wins!")
+            // color black
             reset()
             turnsCounter = 0
             numOfWins2 ++
             $(".p2score").text(numOfWins2)
             $('.container1').addClass("winner")
             $('.name').text(`${p2Name} Wins!` )
+            $('main').addClass("winner2")
         }
 
     }
@@ -164,14 +168,14 @@ const reset = () => {
 $('#letsPlay').click(function(event){
     event.preventDefault();
     reset()
-    $(".p1").text($('#inputName1').val())
+    $(".p1Name").text($('#inputName1').val())
     p1Name = $('#inputName1').val()
-    $(".p2").text($('#inputName2').val())
+    $(".p2Name").text($('#inputName2').val())
     p2Name = $('#inputName2').val()
     if($("#inputColor1").val().length >= 3){
     p1Color = $("#inputColor1").val()
     }else{p1Color = 'red'}
-   if( $("#inputColor2").val().length >= 3){
+    if( $("#inputColor2").val().length >= 3){
     p2Color = $("#inputColor2").val()
     }else{p2Color = 'black'}
   });
