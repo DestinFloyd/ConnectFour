@@ -168,7 +168,6 @@ $('#letsPlay').click(function(event){
     }else{p2Color = 'black'}
   });
 
-
 spin.oninput = function() {
     let howMuch = $("#spin").val()
     document.querySelector("main").style.transform = `rotateY(${howMuch}deg)`

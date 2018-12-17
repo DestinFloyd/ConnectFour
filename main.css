@@ -9,20 +9,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: 'Raleway Dots', cursive;
+    font-size: 2em;
+
 }
 .name{
     font-size: 3em;
-}
-.head:hover
-.rules{
-    display: flex;
-    font-size: 10pt;
-    border: solid blue;
-    border-radius: 10%;
-    text-align: center;
-}
-.rules{
-    display: none;
 }
 main{
     height: 60%;
@@ -34,10 +26,15 @@ main{
 footer{
     height: 15%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .scoreBoard{
     height: 5%;
+    display: flex; 
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-evenly;
+    text-align: center;
     align-self: flex-start;
 }
 
@@ -49,7 +46,7 @@ footer{
     
 }
 .column{
-    width: 14.2%;
+    width: 14.6%;
     height: 100%;
     background: yellow;
 }
@@ -68,16 +65,56 @@ footer{
     font-size: 8em;
     font-weight: bold;
 }
-
+form{
+    position: absolute;
+    display: flex;
+    border: solid blue;
+}
+.list{
+    width: 125px;
+    margin: 0;
+    display: flex; 
+    flex-direction: column-reverse;
+}
 .list:hover
 .listOfColors{
     display: flex;
+    position: absolute; 
+    height: 100px;
+    z-index: 4;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 10pt;
     border: solid blue;
+    background: lightblue;
     border-radius: 10%;
 
+}
+.rules{
+    width: 125px;
+    margin: 0;
+    display: flex; 
+    flex-direction: column-reverse;
+}
+.rules:hover
+.listOfRules{
+    display: flex;
+    position: absolute; 
+    height: 200px;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10pt;
+    border: solid blue;
+    background: lightblue;
+    border-radius: 10%;
+
+
+}
+.listOfRules{
+    display: none;
 }
 .listOfColors{
     display: none;
