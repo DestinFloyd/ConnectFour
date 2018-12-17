@@ -1,7 +1,7 @@
 .container1{
     height: 100vh;
     width: 100vw;
-
+    /* transform: rotateY(180deg) */
 }
 .head{
     height: 25%;
@@ -39,7 +39,7 @@ footer{
 }
 .leg{
     height: 100%;
-    background: yellow;
+    background: blue;
     width: 10%;
 }
 .board{
@@ -48,18 +48,37 @@ footer{
     border: solid blue;
     display: flex;
     flex-direction: row;
-    font-size:0;
+    
 }
 
 .column{
     border: solid red;
     width: 14.2%;
-    Height: 100%;
-    background: white;
+    height: 100%;
+    background: yellow;
 }
 .row{
     border: solid blue;
     height: 14%;
     width: 100%;
-    background: white;
+    background: white
 }
+.row{
+    background-color: white;
+    /* background-attachment: fixed; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* .board{
+background-color: green;
+background-attachment: fixed;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+font-size: 28vw;
+font-weight: bold;
+text-align: center;
+}  */
