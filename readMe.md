@@ -1,7 +1,7 @@
 
 My first project is connect 4, a game with 35 squares you alternate player turns putting pieces on the board. The first to get 4 pieces in a row vertically, horizontally, or diagnoially wins!!
 
-SITE LINK:
+SITE LINK: https://laughing-babbage-545d51.netlify.com/
 
 TRELLO LINK: https://trello.com/b/nV5jL4yB/project1-connect4
 
