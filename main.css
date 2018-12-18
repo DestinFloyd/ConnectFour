@@ -189,9 +189,12 @@ form{
 form{
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     border: solid blue;
     text-align: center;
+    justify-content: flex-end;
+    transform: translateY(50px);
 }
 .list:hover
 .listOfColors{
@@ -208,14 +211,18 @@ form{
 }
 @media (max-width: 500px){
     main{
-        height: 44%;
+        height: 40%;
     }
     .row{
-        font-size: 5em;
+        font-size: 6em;
     }
     .board{
         width: 400px;
         height: 250px;
+    }
+    form{
+        flex-direction: column;
+        transform: translateY(-10px);
     }
     .Rleg{
         width: 35px;
