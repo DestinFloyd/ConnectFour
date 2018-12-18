@@ -19,3 +19,13 @@ alt symbol key courtesy of https://www.alt-codes.net/bullet_alt_codes.php
 
 Gifs by https://giphy.com/
 Thanks to W3Schools for quick review / syntax checking. 
+
+![wireframe layout](https://github.com/DestinFloyd/Connect4.github.io/blob/master/Wireframe/layoutWireframe.jpg)
+![code layout 1/2](https://github.com/DestinFloyd/Connect4.github.io/blob/master/Wireframe/codeWireframe1-2.jpg)
+![code layout 2/2](https://github.com/DestinFloyd/Connect4.github.io/blob/master/Wireframe/codeWireframe2-2.png)
+![winnings layout](https://github.com/DestinFloyd/Connect4.github.io/blob/master/Wireframe/winningsFrame.jpg)
+
+In Version 2 I would like to add :
+An AI option
+Different Background options
+animations where the pieces look like they're falling
