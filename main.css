@@ -49,7 +49,6 @@
     align-items: center;
     font-family: 'Raleway Dots', cursive;
     font-size: 2em;
-
 }
 .name{
     font-size: 3em;
@@ -80,7 +79,6 @@ footer{
     height: 250px;
     display: flex;
     flex-direction: row;
-    
 }
 .column{
     width: 17%;
@@ -179,3 +177,54 @@ form{
     background-color: silver;
     font-size: 1em;
 }
+@media (max-width: 800px){
+.head{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: solid blue;
+    text-align: center;
+}
+.list:hover
+.listOfColors{
+    transform: translate(50px, -225px)
+}
+.rules:hover
+.listOfRules{
+    height: 265px;
+    transform: translateX(50px)
+}
+.userInputField:hover{
+    font-size: small;
+}
+}
+@media (max-width: 500px){
+    main{
+        height: 44%;
+    }
+    .row{
+        font-size: 5em;
+    }
+    .board{
+        width: 400px;
+        height: 250px;
+    }
+    .Rleg{
+        width: 35px;
+    }
+    .Lleg{
+        width: 35px;
+    }
+    footer{
+        height: 25%;
+        align-items: flex-start;
+    }
+    }

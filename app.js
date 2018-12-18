@@ -63,7 +63,7 @@ let score = 0;
 const p1Score = .1;
 const p2Score = 1;
 
-let turnsCounter = 0;
+let turnsCounter = 1;
 
 // score board tracker vars
 let numOfWins1 = 0
@@ -158,7 +158,7 @@ const checkForWins = () => {
             console.log("player1 wins!")
             // color red
             reset()
-            turnsCounter = 0
+            turnsCounter = 1
             numOfWins1 ++
             $(".p1score").text(numOfWins1)
             $('.container1').addClass("winner")
@@ -169,7 +169,7 @@ const checkForWins = () => {
             console.log("player2 wins!")
             // color black
             reset()
-            turnsCounter = 0
+            turnsCounter = 1
             numOfWins2 ++
             $(".p2score").text(numOfWins2)
             $('.container1').addClass("winner")
