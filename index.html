@@ -1,124 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <title>Connect 4</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container1">
-<div class="head">
-    <div class="name">Connect 4</div>
-    <div class="scoreBoard">
-            <div class="p1">
-            <div class="p1Name">Player1</div>
-            <div class="p1score">0</div>
+    <div class="container1">
+        <div class="head">
+            <div class="name">Connect 4</div>
+            <div class="scoreBoard">
+                <div class="p1">
+                    <div class="p1Name">Player1</div>
+                    <div class="p1score">0</div>
+                </div>
+                <div class="p2">
+                    <div class="p2Name">Player2</div>
+                    <div class="p2score">0</div>
+                </div>
             </div>
-            <div class="p2">
-                <div class="p2Name">Player2</div>
-            <div class="p2score">0</div>
+        </div>
+        <main>
+
+            <div class="Lleg"> </div>
+            <div class="board">
+                <div class="column column1" onclick="checkTurns(), switchSpots(b11, b12, b13, b14, b15, b16), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
+                <div class="column column2" onclick="checkTurns(), switchSpots(b21, b22, b23, b24, b25, b26), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
+                <div class="column column3" onclick="checkTurns(), switchSpots(b31, b32, b33, b34, b35, b36), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
+                <div class="column column4" onclick="checkTurns(), switchSpots(b41, b42, b43, b44, b45, b46), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
+                <div class="column column5" onclick="checkTurns(), switchSpots(b51, b52, b53, b54, b55, b56), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
+                <div class="column column6" onclick="checkTurns(), switchSpots(b61, b62, b63, b64, b65, b66), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
+                <div class="column column7" onclick="checkTurns(), switchSpots(b71, b72, b73, b74, b75, b76), checkForWins()">
+                    <div class="row row1" value="0">&#8226</div>
+                    <div class="row row2" value="0">&#8226</div>
+                    <div class="row row3" value="0">&#8226</div>
+                    <div class="row row4" value="0">&#8226</div>
+                    <div class="row row5" value="0">&#8226</div>
+                    <div class="row row6" value="0">&#8226</div>
+                </div><!-- column end -->
             </div>
-            </div>
-</div>
-<main>
+            <div class="Rleg"></div>
 
-<div class="Lleg"> </div>
-<div class="board">
-    <div class="column column1" onclick="checkTurns(), switchSpots(b11, b12, b13, b14, b15, b16), checkForWins()">
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-    <div class="column column2" onclick="checkTurns(), switchSpots(b21, b22, b23, b24, b25, b26), checkForWins()">
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-    <div class="column column3" onclick="checkTurns(), switchSpots(b31, b32, b33, b34, b35, b36), checkForWins()" >
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-    <div class="column column4" onclick="checkTurns(), switchSpots(b41, b42, b43, b44, b45, b46), checkForWins()" >
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-    <div class="column column5" onclick="checkTurns(), switchSpots(b51, b52, b53, b54, b55, b56), checkForWins()" >
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-    <div class="column column6" onclick="checkTurns(), switchSpots(b61, b62, b63, b64, b65, b66), checkForWins()">
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-    <div class="column column7" onclick="checkTurns(), switchSpots(b71, b72, b73, b74, b75, b76), checkForWins()">
-        <div class="row row1" value="0">&#8226</div>
-        <div class="row row2" value="0">&#8226</div>
-        <div class="row row3" value="0">&#8226</div>
-        <div class="row row4" value="0">&#8226</div>
-        <div class="row row5" value="0">&#8226</div>
-        <div class="row row6" value="0">&#8226</div>
-    </div><!-- column end -->
-</div>
-<div class="Rleg"></div>  
+        </main>
+        <footer>
+            <form action="">
+                <input type="range" min="0" max="360" value="5" class="slider userInputField" id="spin">
+                <input type="text" placeholder="Player1's Name" class="userInputField" id="inputName1">
+                <input type="text" placeholder="Player2's Name" class="userInputField" id="inputName2">
+                <input type="text" placeholder="Player1's Color" class="userInputField" id="inputColor1">
+                <input type="text" placeholder="Player2's Color" class="userInputField" id="inputColor2">
+                <div class="list">Colors?<p class="listOfColors">Aqua, Black, Blue,
+                        BlueViolet, Brown, Chartreuse, Crimson, DarkBlue, DarkGoldenRod,
+                        DeepPink, ForestGreen, Gold, Green, LightSalmon, Magenta, Maroon,
+                        Moccasin, Navy, Olive, OrangeRed, Pink, Red, Purple, Yellow, and
+                        More! -Try One- </p>
+                </div>
+                <div class="rules"> How to Play? <p class="listOfRules"> All you need is two Players!
+                        Each player alternates clicking, which places a piece on the board.
+                        The pieces fall straight down, occupying the lowest available space
+                        within the column. The objective of the game is to be the first to
+                        form a horizontal, vertical, or diagonal line of four of one's
+                        own discs. The first player to connect four pieces wins!</p>
+                </div>
+                <button class="userInputField" id="letsPlay">Let's Play</button>
 
-</main>
-<footer>
-    <form action="">
-        <input type="range" min="0" max="360" value="5" class="slider userInputField" id="spin">
-        <input type="text" placeholder="Player1's Name" class="userInputField" id="inputName1">
-        <input type="text" placeholder="Player2's Name" class="userInputField" id="inputName2">
-        <input type="text" placeholder="Player1's Color" class="userInputField" id="inputColor1">
-        <input type="text" placeholder="Player2's Color" class="userInputField" id="inputColor2">
-        <div class="list">Colors?<p class="listOfColors">Aqua, Black, Blue, 
-            BlueViolet, Brown, Chartreuse, Crimson, DarkBlue, DarkGoldenRod, 
-            DeepPink, ForestGreen, Gold, Green, LightSalmon, Magenta, Maroon, 
-            Moccasin, Navy, Olive, OrangeRed, Pink, Red, Purple, Yellow, and 
-            More! -Try One- </p></div>
-        <div class="rules"> How to Play? <p class="listOfRules"> All you need is two Players! 
-                Each player alternates clicking, which places a piece on the board.
-                 The pieces fall straight down, occupying the lowest available space 
-                 within the column. The objective of the game is to be the first to
-                 form a horizontal, vertical, or diagonal line of four of one's 
-                 own discs. The first player to connect four pieces wins!</p></div>
-        <button class="userInputField" id="letsPlay">Let's Play</button>
-    
-</form>
+            </form>
+        </footer>
+    </div> <!-- end of container -->
 
-       
-   
-</footer>
-</div> <!-- end of container -->
-
-   
 </body>
+
 </html>

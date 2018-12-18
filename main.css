@@ -4,7 +4,6 @@
     background-image: url('dots2.gif');
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .winner{
     background-image: url('confetti.gif');
@@ -16,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
     animation: spin 3s ease-in-out; 
 }
 @keyframes spin{
@@ -61,7 +59,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
 }
 footer{
     height: 15%;
@@ -70,6 +67,7 @@ footer{
 }
 .scoreBoard{
     height: 5%;
+    margin-top: 3%;
     display: flex; 
     flex-direction: row;
     width: 150px;
@@ -77,7 +75,6 @@ footer{
     text-align: center;
     align-self: flex-start;
 }
-
 .board{
     width: 450px;
     height: 250px;
@@ -86,7 +83,7 @@ footer{
     
 }
 .column{
-    width: 16%;
+    width: 17%;
     height: 100%;
     background: yellow;
 }
@@ -110,6 +107,12 @@ form{
     display: flex;
     border: solid blue;
 }
+.listOfRules{
+    display: none;
+}
+.listOfColors{
+    display: none;
+}
 .list{
     width: 125px;
     margin: 0;
@@ -120,7 +123,8 @@ form{
 .listOfColors{
     display: flex;
     position: absolute; 
-    height: 100px;
+    height: 225px;
+    width: 120px;
     z-index: 4;
     justify-content: center;
     align-items: center;
@@ -129,7 +133,7 @@ form{
     border: solid blue;
     background: lightblue;
     border-radius: 10%;
-
+    transform: translateY(-225px)
 }
 .rules{
     width: 125px;
@@ -142,7 +146,7 @@ form{
     display: flex;
     position: absolute; 
     height: 200px;
-    z-index: 4;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -151,31 +155,27 @@ form{
     background: lightblue;
     border-radius: 10%;
 
+}
 
-}
-.listOfRules{
-    display: none;
-}
-.listOfColors{
-    display: none;
-}
 .Lleg {
     background: linear-gradient(to right, blue, lightblue);
     height: 300px; 
     width: 50px;
     border-radius: 15% 0% 15% 15%;
+    
 }
 .Rleg{
     background: linear-gradient(to right, blue, lightblue);
     height: 300px; 
     width: 50px;
     border-radius: 0% 25% 25% 25%;
+    display: flex;
 }
 #letsPlay{
     background-color: silver;
     box-shadow: 2px 2px 2px 2px black;
 }
 .userInputField:hover{
-background-color: silver;
-font-size: 1em;
+    background-color: silver;
+    font-size: 1em;
 }
