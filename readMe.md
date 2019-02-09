@@ -1,5 +1,5 @@
 
-My first project is connect 4, a game with 35 squares you alternate player turns putting pieces on the board. The first to get 4 pieces in a row vertically, horizontally, or diagnoially wins!!
+My first project is connect 4, a game with 35 squares you alternate player turns putting pieces on the board. The first to get 4 pieces in a row vertically, horizontally, or diagonally wins!!
 
 
 Technologies Used: 
