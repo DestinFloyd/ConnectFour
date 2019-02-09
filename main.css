@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .winner{
     background-image: url('confetti.gif');
     background-size: auto;
@@ -39,7 +40,7 @@
     90%{
         transform: rotateY(-180deg);
     }
-
+    
 }
 .head{
     height: 25%;
@@ -188,7 +189,6 @@ form{
 }
 .scoreBoard{
     padding: 0;
-
 }
 form{
     position: absolute;
